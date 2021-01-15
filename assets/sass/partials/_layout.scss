@@ -1,0 +1,37 @@
+.youtube {
+
+    &.home{
+        display: grid;
+        grid-template-columns: $base * 31 1fr;
+        grid-template-rows: auto 1fr;
+        height: 100vh;
+    
+        .header {
+            grid-area: 1 / 1 / 2 / 3;
+        }
+        .aside {
+            grid-area: 2 / 1 / 3 / 2;
+        }
+        .content {
+            grid-area: 2 / 2 / 3 / 3;
+        }
+    }
+    
+    &.minimized{
+        display: grid;
+        grid-template-columns: 75px 1fr;
+        grid-template-rows: auto 1fr;
+        min-height: 100vh;
+    
+        .header {
+            grid-area: 1 / 1 / 2 / 3;
+        }
+        .aside {
+            grid-area: 2 / 1 / 3 / 2;
+        }
+        .content {
+            grid-area: 2 / 2 / 3 / 3;
+        }
+    }
+}
+

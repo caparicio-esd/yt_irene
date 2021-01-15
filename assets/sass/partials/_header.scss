@@ -1,0 +1,108 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $base * 1.5 $base * 3 $base * 2 $base * 3;
+
+    .header_left {
+        display: flex;
+        align-items: center;
+
+        .header_toggle {
+            display: flex;
+            margin-right: $base * 3;
+
+            span {
+                font-size: $base * 3;
+               
+            }
+        }
+
+        .header_logo {
+            a {
+                .logo {
+                    width: $base * 10;
+                    img {
+                        width: $base * 10;
+                    }
+                }
+                .lang{
+                    margin-top: -5px;
+                    font-size: $base;
+                    color: $color_dark_grey;
+                }
+            }
+        }
+    } // Header Left
+    
+
+    .header_center{
+        display: flex;
+        flex-basis: 100%;
+        margin: 0 $base * 25;
+
+        .header_searchbox{
+            display: flex;
+            height: $base * 4;
+            flex-basis: 100%;
+
+            input{
+            flex-basis: 100%;
+            padding-left: $base * 1.5;
+            border: 1px solid $color_grey;
+            box-shadow: inset 1px 1px 10px $color_light_grey;
+            }
+
+            button{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: $base * 8;
+                padding: $base;
+                border: 1px solid $color_grey;
+                background-color: $color_light_grey;
+
+                span{
+                    font-size: $base * 2.5;
+                    color: $color_grey;
+                }
+            }
+        }
+    } // Header center
+    
+
+    .header_right{
+        display: flex;
+        align-items: center;
+
+        .header_app_navigation{
+            display: flex;
+
+            .header_app_navigation_item{
+                margin-right: $base * 3.5;
+                a{
+                    display: flex;
+                    color: $color_dark_grey;
+
+                    span{
+
+                    }
+                }
+            }
+        }
+
+        .header_user{
+            
+            a{
+                border-radius: 50%;
+                overflow: hidden;
+                
+                img{
+                    width: $base * 3;
+                    height: $base * 3;
+                    border-radius: 50%;                    
+                }
+            }
+        }
+    } // Header right
+} // Header
