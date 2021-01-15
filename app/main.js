@@ -79,7 +79,9 @@ const renderSecondMenu = () => {
 };
 
 
-const renderVideos = () => {
+
+// async - await 
+const renderVideos = async () => {
     // seleccionar DOM donde inycto
 
     // init vars
@@ -87,6 +89,11 @@ const renderVideos = () => {
     // operaciones de array (mapeo, filtrado, reduccion)
 
     // innerHTML
+
+    const menu = await fetch('https://admin-dev.esdmadrid.es/wp-json/esd/v1/blog').then(d => d.json()).then(d => d);
+
+
+    console.log(menu);
 };
 
 
@@ -94,3 +101,4 @@ const renderVideos = () => {
 setUIProps();
 renderFirstMenu();
 renderSecondMenu();
+renderVideos();
